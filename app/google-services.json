@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "258802573787",
+    "firebase_url": "https://foodey-app.firebaseio.com",
+    "project_id": "foodey-app",
+    "storage_bucket": "foodey-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258802573787:android:6c7ac4335eca72d8",
+        "android_client_info": {
+          "package_name": "com.geekhive.foodey"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258802573787-97rkv550chg32b6n05g2a26t3agjr0vm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_RBQ5Le6REjSn35XB_f7_ufQmzETVOYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258802573787-97rkv550chg32b6n05g2a26t3agjr0vm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258802573787:android:bbc09b4ba8d2bb0a",
+        "android_client_info": {
+          "package_name": "com.geekhive.foodeydeliveryboy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258802573787-97rkv550chg32b6n05g2a26t3agjr0vm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_RBQ5Le6REjSn35XB_f7_ufQmzETVOYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258802573787-97rkv550chg32b6n05g2a26t3agjr0vm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258802573787:android:d2d250e409bb8c79",
+        "android_client_info": {
+          "package_name": "com.geekhive.foodeyrestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258802573787-97rkv550chg32b6n05g2a26t3agjr0vm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_RBQ5Le6REjSn35XB_f7_ufQmzETVOYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258802573787-97rkv550chg32b6n05g2a26t3agjr0vm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

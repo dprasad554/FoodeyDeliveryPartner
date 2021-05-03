@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="10sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="Pick: "
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10sp"
+                android:text="1406029"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/grey_l" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="10sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="Pick by "
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="10:28 pm"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="ITEMS"
+            android:paddingLeft="10sp"
+            android:paddingTop="10sp"
+            android:textColor="@color/text_color_light"
+            android:textSize="14dp"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:paddingLeft="10sp"
+            android:paddingBottom="10sp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16sp"
+            android:text="1 X Pink Guava Ice Cream"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16sp"
+                android:text="1 X Nutella Brownie"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16sp"
+                android:text="1 X Full of Dry Fruit"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/dot"
+            android:layout_gravity="center_horizontal"
+            android:padding="15sp"
+            android:text=" Confirmed  items"
+            android:textColor="@color/dot_dark_screen3"
+            android:textSize="18dp"
+            android:background="@color/grey_l"
+            />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="10sp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="ADDRESS"
+                android:paddingTop="10sp"
+                android:textColor="@color/text_color_light"
+                android:textSize="14dp"
+                android:background="@color/white"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16sp"
+                android:text="Srimayee"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16sp"
+                android:text="@string/address"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <!--<Button
+            android:id="@+id/picked_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:text="Picked Order"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18"
+            android:textStyle="bold"
+            android:visibility="visible" />-->
+
+        <com.ncorti.slidetoact.SlideToActView
+            android:id="@+id/picked_order"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:inner_color="@color/white"
+            app:outer_color="@color/green"
+            app:slider_height="50dp"
+            app:text="Order Picked"
+            app:text_size="@dimen/text_17"
+            app:text_style="bold"
+            android:layout_margin="@dimen/layout_margin10"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

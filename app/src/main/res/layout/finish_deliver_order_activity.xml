@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="10sp"
+                android:paddingTop="10sp"
+                android:paddingBottom="10sp"
+                android:text="Deliver: "
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/orderId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="10sp"
+                android:text="1406029"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/grey_l" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/customerName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.8"
+                android:padding="10sp"
+                android:text="karthik Kumar"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/callCustomer"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="@dimen/layout_margin10"
+                android:layout_marginBottom="@dimen/layout_margin10"
+                android:layout_weight="0.2"
+                android:src="@drawable/phone"
+                android:text="+91 9668801268"
+                android:textSize="@dimen/text_16"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="10sp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:paddingTop="5sp"
+                android:text="ADDRESS"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/addressUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16sp"
+                android:paddingBottom="10sp"
+                android:text="@string/address"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:padding="10sp"
+            android:text="ITEMS"
+            android:textColor="@color/black"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_l"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/itemUsr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16sp"
+                android:drawableStart="@drawable/correct"
+                android:drawableLeft="@drawable/correct"
+                android:paddingLeft="10sp"
+                android:text="  Give 1 items to customer"
+                android:textColor="@color/bg_screen4"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="3sp"
+                android:layout_marginBottom="3sp"
+                android:background="@color/bg_screen4" />
+
+            <TextView
+                android:id="@+id/vT_cash_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/dot"
+                android:paddingLeft="10sp"
+                android:text="  Collect from Customer : ₹ 227 "
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/vT_cash_visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/correct"
+                android:paddingLeft="10sp"
+                android:layout_marginBottom="16sp"
+                android:text="  Collected from Customer : ₹ 227 "
+                android:textColor="@color/bg_screen4"
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/vB_total_cash_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:background="@drawable/background_corner_green"
+                android:text="Collect ₹ 227 cash "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_18"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/vB_finish_do"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_color_light"
+            android:text="Finish task above to deliver order"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18"
+            android:textStyle="bold"/>
+
+       <!-- <Button
+            android:id="@+id/vB_cash_collected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:text="Mark order deliverd"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18"
+            android:textStyle="bold"
+            android:visibility="gone" />-->
+
+        <com.ncorti.slidetoact.SlideToActView
+            android:id="@+id/vB_cash_collected"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:inner_color="@color/white"
+            app:outer_color="@color/green"
+            app:slider_height="50dp"
+            app:text="Mark order deliverd"
+            app:text_size="@dimen/text_17"
+            app:text_style="bold"
+            android:layout_margin="@dimen/layout_margin10"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

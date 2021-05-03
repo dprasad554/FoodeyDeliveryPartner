@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey_l"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close"
+            android:layout_gravity="bottom"
+            android:paddingLeft="10sp"
+            android:paddingBottom="10sp"
+            android:paddingTop="10sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="10sp"
+            android:paddingTop="10sp"
+            android:paddingBottom="10sp"
+            android:text="Trip Summary"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_earnings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:background="@drawable/instruction_box_grey"
+        android:padding="16sp"
+        android:layout_margin="16sp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16sp"
+            android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trip Earning : "
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tripEarning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹ 0"
+            android:textColor="@color/black"/>
+        </LinearLayout>
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16sp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Earnings today : "
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/today_earning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 0"
+                android:textColor="@color/black"/>
+        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16sp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bonus : "
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/wallet_earning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 0"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16sp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Floating Cash : "
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/float_earning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 0"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/like"
+        android:layout_width="30sp"
+        android:layout_height="30sp"
+        android:src="@drawable/like"
+        android:layout_below="@+id/layout_earnings"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/trip_timing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10sp"
+        android:paddingTop="10sp"
+        android:gravity="center_horizontal"
+        android:text="You finished this trip in 23 mins!"
+        android:layout_below="@+id/like"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:visibility="gone"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:gravity="center_horizontal"
+        android:text="Keep completing orders to earn more!"
+        android:layout_below="@+id/trip_timing"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/go_to_feed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:layout_margin="16sp"
+            android:text="Go to Feed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_18"
+            android:textStyle="bold"
+            android:visibility="visible"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

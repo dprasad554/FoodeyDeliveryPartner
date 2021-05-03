@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.geekhive.foodeydeliveryboy">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- <uses-permission android:name="android.permission.GET_ACCOUNTS" /> -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+
+        <activity android:name=".activities.GroceryNewOrderNotificationActivity"/>
+        <activity android:name=".activities.GroceryRestaurantReachActivity"/>
+        <activity android:name=".activities.GroceryPickOrderActivity"/>
+        <activity android:name=".activities.GroceryConfirmedPickOrderActivity"/>
+        <activity android:name=".activities.GroceryReachDropLocation"/>
+        <activity android:name=".activities.GroceryFinishDeliveryActivity"/>
+        <activity android:name=".activities.GroceryOrderCompletedActivity"/>
+        <activity android:name=".activities.GroceryGetOTPActivity"/>
+
+        <activity android:name=".activities.CakeNewOrderNotificationActivity"/>
+        <activity android:name=".activities.CakeRestaurantReachActivity"/>
+        <activity android:name=".activities.CakesPickOrderActivity"/>
+        <activity android:name=".activities.CakeConfirmedPickOrderActivity"/>
+        <activity android:name=".activities.CakeReachDropLocation"/>
+        <activity android:name=".activities.CakeFinishDeliveryActivity"/>
+        <activity android:name=".activities.CakeOrderCompletedActivity"/>
+        <activity android:name=".activities.CakeGetOTPActivity"/>
+
+        <activity android:name=".activities.RestaurantReachActivity"/>
+        <activity android:name=".activities.PickOrderActivity"/>
+        <activity android:name=".activities.ConfirmedPickOrderActivity"/>
+        <activity android:name=".activities.ReachDropLocation"/>
+        <activity android:name=".activities.FinishDeliveryActivity"/>
+        <activity android:name=".activities.OrderCompletedActivity"/>
+        <activity android:name=".activities.GetOTPActivity"/>
+        <activity android:name=".activities.NewOrderNotificationActivity"/>
+
+        <activity android:name=".activities.NewOrderAlertActivity"/>
+        <activity android:name=".activities.CakeNewOrderAlert"/>
+        <activity android:name=".activities.GroceryNewOrderAlert"/>
+        <activity android:name=".activities.MainActivity"/>
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.RevenueActivity" />
+        <activity android:name=".activities.OrdersActivity" />
+        <activity android:name=".activities.SignUpActivity"/>
+        <activity android:name=".activities.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".notifications.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/foodey_logo_" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_map_api" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.geekhive.foodeydeliveryboy.provider"
+            android:enabled="true"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver android:name=".utils.ActionReceiver" />
+
+    </application>
+
+</manifest>

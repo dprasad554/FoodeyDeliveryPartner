@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/circle_white_corner_bend_too_less"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/select_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/add_phote"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_18" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/text_color" />
+
+            <TextView
+                android:id="@+id/choose_from_gallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start|center"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:text="@string/choose_from_gallery"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_16" />
+
+
+            <TextView
+                android:id="@+id/take_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start|center"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:text="@string/take_photo"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_16" />
+
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start|center"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:text="@string/cancel_text"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_16" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

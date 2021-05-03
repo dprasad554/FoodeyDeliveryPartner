@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Foodey Delivery Boy</string>
+    <string name="phone_num">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="email">Email id</string>
+
+    <string name="something_wrong">SomeThing Went Wrong</string>
+
+    <!--Delivery Boy Profile-->
+    <string name="deliveryBoy">Sign Up</string>
+    <string name="uploadId">Upload Id Proof (Only Aadhar Card in PNG.)</string>
+    <string name="front">Front Side Of Aadhar Card</string>
+    <string name="back">Back Side Of Aadhar Card</string>
+    <string name="uploadId1">Upload Driving Licence (Only in PNG)</string>
+    <string name="uploadId2">Upload Residence Proof (Only in PNG)</string>
+    <string name="AddSubmit">Submit</string>
+
+    <!--popup-->
+    <string name="add_phote">Add Photo</string>
+    <string name="choose_from_gallery">Choose from gallery</string>
+    <string name="take_photo">Take photo</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="no_internet">Please check you network connection</string>
+
+    <string name="title_permission">Location Permission</string>
+    <string name="title_read_permission">Read SMS</string>
+    <string name="ok">ok</string>
+
+    <!--- Restaurant Owner-->
+    <string name="ownerName">Raghav Singh</string>
+    <string name="designation">Restaurant Owner</string>
+    <string name="daily">Daily Earning and Orders</string>
+    <string name="orders">No.Of Orders</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="menuAdd">Add Menu</string>
+    <string name="menuList">Menu List</string>
+    <string name="logout">Logout</string>
+    <string name="order">Order Delivered</string>
+
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+    <string name="address">CSi Compound,Sp Bungalow Beside , Raja Reddy Street, Kadapa, Kadapa Locality, Kadapa  </string>
+    <string name="merchant">If merchant is busy wait for some time and ask for OTP</string>
+    <string name="requestotp">Request only If you have reached restaurant and asked merchant for OTP</string>
+    <string name="orderdel">You just delivered an order</string>
+    <string name="ratetxt">Please rate your experience with the customer</string>
+    <string name="improvetxt">Tell us more so we can improve</string>
+    <string name="google_map_api">AIzaSyB_RBQ5Le6REjSn35XB_f7_ufQmzETVOYY</string>
+</resources>

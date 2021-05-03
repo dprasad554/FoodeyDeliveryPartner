@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/grey_l" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10sp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/grey_l"
+                android:orientation="horizontal"
+                android:paddingBottom="10sp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="16sp"
+                    android:layout_weight="0.8"
+                    android:text="Customer Feedback"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/skip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16sp"
+                    android:layout_weight="0.2"
+                    android:gravity="center_horizontal"
+                    android:text="Skip"
+                    android:textAlignment="center"
+                    android:textColor="@color/red"
+
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="16sp"
+                android:paddingBottom="10sp"
+                android:text="@string/orderdel"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="16sp"
+                    android:text="Order Id : "
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="16sp"
+                    android:text="208810"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:layout_marginTop="5sp"
+                android:paddingBottom="16sp"
+                android:text="karthik Kumar"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="16sp"
+                android:paddingBottom="10sp"
+                android:text="@string/ratetxt"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <com.hsalf.smilerating.SmileRating
+                android:id="@+id/smile_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="16sp"
+                android:paddingBottom="10sp"
+                android:text="@string/improvetxt"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+            <RelativeLayout
+                android:id="@+id/vR_smiley"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10sp">
+
+                    <TextView
+                        android:id="@+id/vT_cst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/instruction_box_grey"
+                        android:padding="10dp"
+                        android:text="Customer said thank you"
+                        android:textColor="@color/text_color_light2" />
+
+                    <TextView
+                        android:id="@+id/vT_cwn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/instruction_box_grey"
+                        android:text="Customer was nice"
+                        android:layout_marginLeft="10sp"
+                        android:padding="10dp"/>
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10sp"
+                    android:layout_below="@+id/layout1">
+
+                    <TextView
+                        android:id="@+id/vT_cgt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/instruction_box_grey"
+                        android:text="Customer gave tip"
+                        android:padding="10dp"/>
+
+                    <TextView
+                        android:id="@+id/vT_cot"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/instruction_box_grey"
+                        android:text="Customer was on time"
+                        android:layout_marginLeft="10sp"
+                        android:padding="10dp"/>
+
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="10sp"
+                    android:layout_below="@+id/layout2">
+
+                    <TextView
+                        android:id="@+id/vT_cgtw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/instruction_box_grey"
+                        android:text="Customer gave the water"
+                        android:padding="10dp"/>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+
+                <Button
+                    android:id="@+id/submit_rating"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16sp"
+                    android:layout_marginTop="16sp"
+                    android:layout_weight="0.5"
+                    android:background="@color/text_color_light"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_18"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

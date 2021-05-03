@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="text_8">8sp</dimen>
+    <dimen name="text_2">1dp</dimen>
+    <dimen name="text_10">10sp</dimen>
+    <dimen name="text_11">11sp</dimen>
+    <dimen name="text_12">12sp</dimen>
+    <dimen name="text_13">13sp</dimen>
+    <dimen name="text_14">14sp</dimen>
+    <dimen name="text_15">15sp</dimen>
+    <dimen name="text_16">16sp</dimen>
+    <dimen name="text_17">17sp</dimen>
+    <dimen name="text_18">18sp</dimen>
+    <dimen name="text_19">19sp</dimen>
+    <dimen name="text_20">20sp</dimen>
+    <dimen name="text_22">22sp</dimen>
+    <dimen name="text_25">25sp</dimen>
+    <dimen name="text_35">35sp</dimen>
+    <dimen name="text_45">45sp</dimen>
+    <dimen name="text_62">62sp</dimen>
+    <dimen name="button_size">50dp</dimen>
+    <dimen name="layout_margin5">5dp</dimen>
+    <dimen name="layout_margin10">10dp</dimen>
+    <dimen name="tab_height">55dp</dimen>
+    <dimen name="fast_scroll_overlay_text_size">100dp</dimen>
+    <dimen name="touch_button_wobble">12dp</dimen>
+    <dimen name="navigationdrawer_width">300dp</dimen>
+    <dimen name="navigationdrawer_height">56dp</dimen>
+    <dimen name="backbutton_height">30dp</dimen>
+
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">9sp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">9sp</dimen>
+
+    <dimen name="showcase_radius">34dp</dimen>
+    <dimen name="showcase_radius_inner">36dp</dimen>
+    <dimen name="showcase_radius_outer">45dp</dimen>
+
+    <dimen name="showcase_radius_material">34dp</dimen>
+
+    <dimen name="custom_showcase_width">96dip</dimen>
+    <dimen name="custom_showcase_height">48dip</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dots_height">30dp</dimen>
+    <dimen name="dots_margin_bottom">20dp</dimen>
+    <dimen name="img_width_height">120dp</dimen>
+    <dimen name="slide_title">30dp</dimen>
+    <dimen name="slide_desc">16dp</dimen>
+    <dimen name="desc_padding">40dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+</resources>

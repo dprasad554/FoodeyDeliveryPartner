@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_home"
+        android:enabled="true"
+        android:icon="@drawable/baseline_home_white_36"
+        android:title="Home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_orders"
+        android:enabled="true"
+        android:icon="@drawable/baseline_library_books_white_36"
+        android:title="Orders"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/baseline_account_circle_white_36"
+        android:title="Profile"
+        app:showAsAction="always" />
+
+   <!-- <item
+        android:id="@+id/action_settings"
+        android:enabled="true"
+        android:icon="@drawable/baseline_settings_white_36"
+        android:title=""
+        app:showAsAction="ifRoom" />-->
+</menu>
